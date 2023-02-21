@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="UI Test Suite" verbose="1">
+    <test name="Checking the Italian restaurants">
+        <classes>
+            <class name="uiTests.JustEatMainTests">
+                <methods>
+                    <include name="checkItalianRestaurants"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Checking restaurants having minimum charge equalORLessThan 10">
+        <classes>
+            <class name="uiTests.JustEatMainTests">
+                <methods>
+                    <include name="checkRestaurantsMinLessThan10"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
